@@ -1,12 +1,9 @@
-body {
-	padding-top: 7vh;
-}
 body * {
 	border-style: solid;
 	border-size: 1;
 }
 section#main-content {
-	height: 83vh;
+	height: 80vh;
 	overflow: hidden;
 	margin-right: 30px;
 	margin-left: 30px;
@@ -15,7 +12,7 @@ section#main-content article {
 	height: 100%;
 }
 section#main-content article#home {
-	height: 83vh;
+	height: 80vh;
 	overflow: hidden;
 }
 img.main-carousel {
