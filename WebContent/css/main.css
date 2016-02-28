@@ -1,8 +1,12 @@
 div {
-	border: 1;
+	border-style: solid;
+	border-size: 1;
 }
 img {
 	max-width: 100%;
 	height: auto;
 	width: auto\9; /* ie8 */
+}
+div.row {
+	text-align: center;
 }
