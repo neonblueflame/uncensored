@@ -4,9 +4,9 @@ div {
 }
 img {
 	max-width: 100%;
-	height: auto;
+	height: 900px;
 	width: auto\9; /* ie8 */
 }
 div.row {
-	text-align: center;
+	margin: auto
 }
