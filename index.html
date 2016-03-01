@@ -13,10 +13,10 @@
 </head>
 
 <body class="container-fluid">
-	<header class="col-xs-12 col-md-offset-8 col-md-4">
-		<nav id="navbar-spy" class="navbar navbar-default navbar-static"
-			role="navigation">
-			<ul class="nav navbar-nav">
+	<header id="nav-container"
+		class="overlay-background col-xs-12 col-md-offset-8 col-md-4">
+		<nav id="navbar-spy" role="navigation">
+			<ul>
 				<li class="active col-xs-4"><a href="#home">Home</a></li>
 				<li class="col-xs-4"><a href="#artworks">Artworks</a></li>
 				<li class="col-xs-4"><a href="#artist">Artist</a></li>
@@ -24,44 +24,51 @@
 		</nav>
 	</header>
 
-	<section id="main-content" data-target="#navbar-spy" data-spy="scroll"
-		class="row">
-		<article id="home" class="col-md-12">
-			<img class="main-carousel"
-				src="https://vihpaulaa.files.wordpress.com/2015/10/413a5-akagami-no-shirayukihime-full-53326.jpg">
-		</article>
-		<article id="artworks" class="col-md-12">
-			<h3>Second</h3>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-			consequat sapien eget augue cursus vestibulum. Vestibulum accumsan
-			placerat enim sed tristique. Mauris faucibus velit ut commodo rutrum.
-			Nulla risus lorem, cursus eget dui sed, luctus viverra tellus. Duis
-			finibus tristique magna nec hendrerit. Sed aliquam tortor eros, ut
-			tincidunt eros laoreet nec. Maecenas porttitor, purus eget rutrum
-			molestie, ligula augue bibendum orci, id euismod sapien arcu non
-			lacus. Aenean id elementum erat, at ultrices ligula.
-		</article>
-		<article id="artist" class="col-md-12">
-			<h3>Third</h3>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-			consequat sapien eget augue cursus vestibulum. Vestibulum accumsan
-			placerat enim sed tristique. Mauris faucibus velit ut commodo rutrum.
-			Nulla risus lorem, cursus eget dui sed, luctus viverra tellus. Duis
-			finibus tristique magna nec hendrerit. Sed aliquam tortor eros, ut
-			tincidunt eros laoreet nec. Maecenas porttitor, purus eget rutrum
-			molestie, ligula augue bibendum orci, id euismod sapien arcu non
-			lacus. Aenean id elementum erat, at ultrices ligula.
-		</article>
-	</section>
+	<header id="title-container"
+		class="overlay-background col-md-offset-8 col-md-4">
+		<h1>Unscensored</h1>
+		<h3>Multimedia project</h3>
+	</header>
 
-	<footer class="col-xs-12 col-md-offset-8 col-md-4"> 
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-		consequat sapien eget augue cursus vestibulum.
-	</footer>
-	
-	<script src="WebContent/js/main.js"></script>
+	<div id="main-content-container">
+		<section id="main-content" data-target="nav" data-spy="scroll"
+			class="row">
+			<article id="home" class="col-md-12">
+				<img class="main-carousel"
+					src="https://vihpaulaa.files.wordpress.com/2015/10/413a5-akagami-no-shirayukihime-full-53326.jpg">
+			</article>
+			<article id="artworks" class="col-md-12">
+				<h3>Second</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+				consequat sapien eget augue cursus vestibulum. Vestibulum accumsan
+				placerat enim sed tristique. Mauris faucibus velit ut commodo
+				rutrum. Nulla risus lorem, cursus eget dui sed, luctus viverra
+				tellus. Duis finibus tristique magna nec hendrerit. Sed aliquam
+				tortor eros, ut tincidunt eros laoreet nec. Maecenas porttitor,
+				purus eget rutrum molestie, ligula augue bibendum orci, id euismod
+				sapien arcu non lacus. Aenean id elementum erat, at ultrices ligula.
+			</article>
+			<article id="artist" class="col-md-12">
+				<h3>Third</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+				consequat sapien eget augue cursus vestibulum. Vestibulum accumsan
+				placerat enim sed tristique. Mauris faucibus velit ut commodo
+				rutrum. Nulla risus lorem, cursus eget dui sed, luctus viverra
+				tellus. Duis finibus tristique magna nec hendrerit. Sed aliquam
+				tortor eros, ut tincidunt eros laoreet nec. Maecenas porttitor,
+				purus eget rutrum molestie, ligula augue bibendum orci, id euismod
+				sapien arcu non lacus. Aenean id elementum erat, at ultrices ligula.
+			</article>
+		</section>
+	</div>
+
+	<footer class="overlay-background col-xs-12 col-md-offset-8 col-md-4">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat
+		sapien eget augue cursus vestibulum. </footer>
+
 	<script src="WebContent/js/jquery-2.2.1.min.js"></script>
 	<script src="WebContent/js/bootstrap.min.js"></script>
+	<script src="WebContent/js/main.js"></script>
 </body>
 
 </html>
