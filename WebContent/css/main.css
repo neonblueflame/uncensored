@@ -6,33 +6,48 @@ body * {
 .overlay-background {
 	background-color: rgba(255,255,255,0.85);
 }
+.italicized {
+	font-style: italic;
+}
 
 body {
-	background-color: #F2F2F2;
+	background-color: #F8F7F7;
+}
+
+img {
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+img.social-media-icon {
+	height: 50px;
+	width: 50px;
 }
 
 header#nav-container>nav>ul {
 	list-style-type: none;
 }
-header#title-container>h1 {
+header.title-container>h1 {
 	text-transform: uppercase;
 	font-size: 40px;
 }
-header#title-container {
+header#title-container-md-lg {
 	height: 81vh;
 	
 	position: absolute;
 	right: 5px;
 	top: 38px;
 	z-index: 1;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
-header#title-container>* {
+header.title-container {
+	text-align: center;
+}
+header.title-container>* {
+	position: relative;
+	top: 47%;
+	
 	padding: 0px;
-	margin: 0px;
+	margin: auto;
 	
 	color: #808080;
 }
@@ -50,8 +65,14 @@ section#main-content article#home {
 	height: 80vh;
 	overflow: hidden;
 }
-img.main-carousel {
-	width: 100%;
-	margin: auto;
-	display: block;
+
+article#artist section#bio-container {
+	background-color: #FFF;
+	height: 100%;
+}
+section#bio-container p#social-media {
+	display: flex;
+}
+footer {
+	text-align: center;
 }
