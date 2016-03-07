@@ -6,8 +6,14 @@ body * {
 .overlay-background {
 	background-color: rgba(222,206,183,0.85);
 }
+
 .italicized {
 	font-style: italic;
+}
+
+.offset-0 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 body {
@@ -60,12 +66,16 @@ section#main-content {
 }
 section#main-content article {
 	height: 100%;
+	overflow: hidden;
 }
 section#main-content article#home {
 	height: 80vh;
-	overflow: hidden;
 }
 
+article#artist section#bio-container {
+	background-color: #FFF;
+	height: 100%;
+}
 article#artist section#bio-container {
 	background-color: #FFF;
 	height: 100%;
