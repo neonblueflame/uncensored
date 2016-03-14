@@ -55,4 +55,42 @@ $(document).ready(function() {
 		
 		transitionMainContent();
 	});
+	
+	var artworks=$("#artworks").children();
+	$(artworks[0]).hover(
+		function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg");
+			$(this).fadeIn();
+		}
+		, function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "WebContent/img/IMG_0330.JPG");
+			$(this).fadeIn();
+		}
+	);
+	$(artworks[1]).hover(
+		function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg");
+			$(this).fadeIn();
+		}
+		, function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "WebContent/img/IMG_0331.JPG");
+			$(this).fadeIn();
+		}
+	);
+	$(artworks[2]).hover(
+		function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg");
+			$(this).fadeIn();
+		}
+		, function() {
+			$(this).fadeOut();
+			$("img:first", this).attr("src", "WebContent/img/IMG_0332.JPG");
+			$(this).fadeIn();
+		}
+	);
 });
