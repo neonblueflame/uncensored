@@ -26,10 +26,7 @@ $(document).ready(function() {
 	var mainTitle = $(".title-container>h1").html();
 	var mainSubTitle = $(".title-container>h3").html();
 	
-	var descArtwork = "A series of three 3ft. by 4ft. oil paintings on plywood " +
-		"that would open the eyes of viewers to better understand " +
-		"the teenager's stories as to when suicidal ideation comes " +
-		"to their mind.";
+	var descArtwork = $("#about>section#detail-container").html();
 	
 	if (window.location.href.split("#")[1] === "artworks") {
 		$(".title-container>h3").html(descArtwork);
@@ -55,6 +52,7 @@ $(document).ready(function() {
 	};
 	
 	$("#link-home").click(setToUnscensored);
+	$("#link-about").click(setToUnscensored);
 	$("#link-artworks").click( function() {
 		setToUnscensored();
 		$(".title-container>h3").html(descArtwork);

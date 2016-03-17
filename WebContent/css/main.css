@@ -53,6 +53,7 @@ img.social-media-icon {
 
 header#nav-container>nav>ul {
 	list-style-type: none;
+	padding: 0px;
 }
 header#nav-container a {
 	text-decoration: none;
@@ -102,8 +103,13 @@ section#main-content article {
 	height: 100%;
 	overflow: hidden;
 }
+
 section#main-content article#home {
 	height: 80vh;
+}
+
+article#about section#detail-container{
+	font-size: 30px;
 }
 
 article#artist section#bio-container {
