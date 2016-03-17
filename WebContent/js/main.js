@@ -26,6 +26,15 @@ $(document).ready(function() {
 	var mainTitle = $(".title-container>h1").html();
 	var mainSubTitle = $(".title-container>h3").html();
 	
+	var descArtwork = "A series of three 3ft. by 4ft. oil paintings on plywood " +
+		"that would open the eyes of viewers to better understand " +
+		"the teenager's stories as to when suicidal ideation comes " +
+		"to their mind.";
+	
+	if (window.location.href.split("#")[1] === "artworks") {
+		$(".title-container>h3").html(descArtwork);
+	}
+	
 	var transitionMainContent = function() {
 		$("section#main-content").fadeOut();
 		$("section#main-content").fadeIn();
@@ -46,7 +55,10 @@ $(document).ready(function() {
 	};
 	
 	$("#link-home").click(setToUnscensored);
-	$("#link-artworks").click(setToUnscensored);
+	$("#link-artworks").click( function() {
+		setToUnscensored();
+		$(".title-container>h3").html(descArtwork);
+	});
 	
 	$("#link-artist").click(function() {
 		$(".title-container>h1").html("Rayne Mariano");
